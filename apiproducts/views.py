@@ -11,5 +11,5 @@ from django.shortcuts import render
 # Create your views here.
 
 class ProductoViewSet(viewsets.ModelViewSet):
-    queryset = Producto.objects.all().order_by('nombre')
+    queryset = Producto.objects.all().order_by('id')
     serializer_class = ProductoSerializer

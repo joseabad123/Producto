@@ -30,16 +30,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'apiproducts.apps.ApiproductsConfig', # adding new app apiproducts
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apiproducts.apps.ApiproductsConfig', # adding new app apiproducts
     'graphene_django', # adding graphene library to work with graphql
     'rest_framework', # adding drf on products
-#    'apiproducts', # adding app to root
 ]
 
 MIDDLEWARE = [

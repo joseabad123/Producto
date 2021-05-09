@@ -7,6 +7,7 @@ class ProductType(DjangoObjectType):
     class Meta:
         model = Producto
 
+
 class Query(graphene.ObjectType):
     products = graphene.List(ProductType)
 
